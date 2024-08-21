@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Energy Egypt</title>
+    <link rel="shortcut icon" href="images/icon.png" type="image/x-icon">
+    <!-- imports -->
+    <div>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+            rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Share+Tech&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css"
+            integrity="sha512-jnSuA4Ss2PkkikSOLtYs8BlYIeeIK1h99ty4YfvRPAlzr377vr3CXDb7sb7eEEBYjDtcYj+AjBH3FLv5uSJuXg=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+            integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+            integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdn.rawgit.com/hilios/jQuery.countdown/2.2.0/dist/jquery.countdown.min.js"></script>
+
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+            integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+    </div>
+    <link rel="stylesheet" href="style/index.css">
+    <link rel="stylesheet" href="style/header.css">
+    <link rel="stylesheet" href="style/nav.css">
+    <link rel="stylesheet" href="style/services.css">
+    <link rel="stylesheet" href="style/agenda.css">
+    <link rel="stylesheet" href="style/countdown.css">
+    <link rel="stylesheet" href="style/touches.css">
+</head>
+
+<body>
+    <nav class="container">
+        <a href="/">
+            <img src="images/logoInverted.png" alt="AI Energy Egypt Logo">
+        </a>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#competition">Competition</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <a href="https://forms.gle/A6q2Gq4eu8Zxnfyf8" target="_blank">
+            <button class="btn btn-secondary">Apply</button>
+        </a>
+        <div class="mobile-menu" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+            aria-controls="offcanvasRight">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasRightLabel"></h5>
+                <button id="close-menu" type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                    aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="mobile-list">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#competition">Competition</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header id="home">
+        <section class="container">
+            <div class="left" data-aos="fade-right">
+                <div id="countdowns">
+                </div>
+                <h2>Empowering the Future of Energy</h2>
+                <p>
+                    Discover innovative solutions and transformative technologies that are shaping the future of the
+                    energy industry. Join us as we drive change and unlock new opportunities for sustainable
+                    development.
+                </p>
+                <a href="https://forms.gle/A6q2Gq4eu8Zxnfyf8" target="_blank">
+                    <button class="btn btn-secondary">
+                        Get Started
+                    </button>
+                </a>
+            </div>
+            <div class="right">
+                <img src="images/main.jpg" alt="webinar" class="big" data-aos="flip-up">
+                <img src="imgs/header/arrow.svg" alt="webinar" class="arrow">
+                <img src="images/robot1.jpg" alt="webinar" class="west" data-aos="fade-up-left">
+                <img src="images/energy1.jpg" alt="webinar" class="east" data-aos="flip-right">
+                <img src="images/academic3.jpg" alt="webinar" class="bottom" data-aos="fade-up-left">
+            </div>
+        </section>
+    </header>
+    <div class="divider" id="competition">
+        <div class="container">
+            <img src="images/logo.png" alt="logo">
+            <h3>Empowering the Future of Energy Through AI Innovation</h3>
+        </div>
+    </div>
+    <section class="offer">
+        <div class="ball large" data-aos="fade-down-left"></div>
+        <div class="ball medium" data-aos="fade-up-right"></div>
+        <h5 data-aos="zoom-in">COMPETITION</h5>
+        <h1 data-aos="zoom-in">Are You Ready to Compete?</h1>
+        <article class="timeline" data-aos="flip-up">
+            <div class="ball xsmall"></div>
+            <div class="ball small"></div>
+            <div class="competition-content">
+                <p>Join the ultimate challenge and test your skills against the best! Our competition offers a unique
+                    opportunity to showcase your talents and win exciting prizes.</p>
+                <div class="table-responsive">
+                    <table class="table">
+                        <tbody>
+                            <tr>
+                                <td><strong>Start Date:</strong></td>
+                                <td>September 1, 2024</td>
+                            </tr>
+                            <tr>
+                                <td><strong>End Date:</strong></td>
+                                <td>October 15, 2024</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Categories:</strong></td>
+                                <td>AI, Machine Learning, Data Science</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Prizes:</strong></td>
+                                <td>Cash rewards, certifications, and more!</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p>Don't miss out on this chance to make your mark. Apply now and be part of something extraordinary!
+                </p>
+            </div>
+        </article>
+    </section>
+    <div class="divider" id="faq">
+        <div class="container">
+            <div>
+                <p class="greyed">In partnership with</p>
+                <p>Top Companies</p>
+            </div>
+            <div class="countries">
+                <div class="img"> <img src="images/saweiras1.jpeg" alt=""> </div>
+                <div class="img"> <img src="images/gouna.png" alt=""> </div>
+                <div class="img"> <img src="images/sewedy.png" alt=""> </div>
+                <div class="img"> <img src="images/ieee.jpg" alt=""> </div>
+            </div>
+        </div>
+    </div>
+    <section class="offer">
+        <div class="container">
+            <h5 data-aos="fade-down">FAQ</h5>
+            <h1 data-aos="fade-down">Frequently Asked Questions</h1>
+            <div class="faq-items">
+                <div class="faq-item" data-aos="fade-up">
+                    <h3 class="faq-question">What is the purpose of this competition?</h3>
+                    <div class="faq-answer">
+                        <p>This competition aims to challenge participants in the fields of AI, Machine Learning, and
+                            Data Science. It provides an opportunity for you to showcase your skills and win exciting
+                            prizes.</p>
+                    </div>
+                </div>
+                <div class="faq-item" data-aos="fade-up">
+                    <h3 class="faq-question">How can I participate?</h3>
+                    <div class="faq-answer">
+                        <p>You can participate by registering on our official website and following the guidelines
+                            provided. Ensure you meet the eligibility criteria before applying.</p>
+                    </div>
+                </div>
+                <div class="faq-item" data-aos="fade-up">
+                    <h3 class="faq-question">What are the prizes?</h3>
+                    <div class="faq-answer">
+                        <p>The prizes include cash rewards, certifications, and exclusive opportunities to collaborate
+                            with top industry professionals.</p>
+                    </div>
+                </div>
+                <div class="faq-item" data-aos="fade-up">
+                    <h3 class="faq-question">When will the results be announced?</h3>
+                    <div class="faq-answer">
+                        <p>The results will be announced on October 25, 2024, on our official website and through email
+                            notifications to all participants.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="divider" id="testimonials">
+        <div class="container">
+            <div class="share">
+                Time Remaining
+            </div>
+            <div class="countdown" id="countdown">
+                <div class="countdown__container">
+                    <div class="countdown__el">
+                        <img src="imgs/clock.svg" alt="">
+                        <div class="countdown__time flip" id="days">
+                            <span class="count curr top">00</span>
+                            <span class="count next top">00</span>
+                            <span class="count curr bottom">00</span>
+                            <span class="count next bottom">00</span>
+                        </div>
+                        <span class="countdown__label">Days</span>
+                    </div>
+                    <div class="countdown__el">
+                        <img src="imgs/clock.svg" alt="">
+                        <div class="countdown__time flip" id="hours">
+                            <span class="count curr top">00</span>
+                            <span class="count next top">00</span>
+                            <span class="count curr bottom">00</span>
+                            <span class="count next bottom">00</span>
+                        </div>
+                        <span class="countdown__label">Hours</span>
+                    </div>
+                    <div class="countdown__el">
+                        <img src="imgs/clock.svg" alt="">
+                        <div class="countdown__time flip" id="mins">
+                            <span class="count curr top">00</span>
+                            <span class="count next top">00</span>
+                            <span class="count curr bottom">00</span>
+                            <span class="count next bottom">00</span>
+                        </div>
+                        <span class="countdown__label">Minutes</span>
+                    </div>
+                    <div class="countdown__el">
+                        <img src="imgs/clock.svg" alt="">
+                        <div class="countdown__time flip" id="seconds">
+                            <span class="count curr top">00</span>
+                            <span class="count next top">00</span>
+                            <span class="count curr bottom">00</span>
+                            <span class="count next bottom">00</span>
+                        </div>
+                        <span class="countdown__label">Seconds</span>
+                    </div>
+                </div>
+            </div>
+            <a href="https://forms.gle/A6q2Gq4eu8Zxnfyf8" target="_blank">
+                <button class="btn btn-primary">
+                    Apply Now
+                </button>
+            </a>
+        </div>
+    </div>
+    <section class="offer" id="real-contact">
+        <div class="fornav" id="contact"></div>
+        <div class="container">
+            <h5 data-aos="fade-down">Contact Us</h5>
+            <h1 data-aos="fade-down">Get in Touch</h1>
+            <form data-aos="fade-up" id="contact-form">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+        </div>
+    </section>
+    <!-- Success Modal -->
+    <div id="success-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <i class="fa-solid fa-circle-check"></i>
+            <p>Your message has been sent successfully!</p>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-links">
+                <a href="#">Home</a>
+                <a href="#competition">Competition</a>
+                <a href="#faq">FAQ</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="footer-social">
+                <a href="https://facebook.com"><i class="fab fa-facebook"></i></a>
+                <a href="https://twitter.com"><i class="fab fa-twitter"></i></a>
+                <a href="https://linkedin.com"><i class="fab fa-linkedin"></i></a>
+            </div>
+            <p>&copy; 2024 AI for Energy Egypt. All rights reserved.</p>
+            <p>
+                Made by
+                <i>
+                    <a href="https://www.linkedin.com/in/amrfayezz1/" target="_blank">Amr Fayez</a>
+                </i>
+            </p>
+        </div>
+    </footer>
+    <!-- Bootstrap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"
+        integrity="sha512-7Pi/otdlbbCR+LnW+F7PwFcSDJOuUJB3OxtEHbg4vSMvzvJjde4Po1v4BR9Gdc9aXNUNFVUY+SK51wWT8WF0Gg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- countdown -->
+    <script>
+        $(document).ready(function () {
+            $('#countdowns').countdown('2025-05-18', function (event) {
+                var days = event.offset.totalDays;
+                var displayString = '';
+                if (days) {
+                    displayString += days + (days === 1 ? ' Day<br> ' : ' Days<br> ');
+                }
+                displayString += event.strftime('%H:%M:%S');
+                $(this).html(displayString);
+            });
+        });
+    </script>
+    <!-- AOS -->
+    <!-- <script>
+        AOS.init({
+            duration: 1500
+        });
+    </script> -->
+    <!-- countdown -->
+    <script>
+        const newYearEl = document.getElementById("date");
+        const daysEl = document.getElementById("days");
+        const daysElCurr = daysEl.getElementsByClassName("curr");
+        const daysElNext = daysEl.getElementsByClassName("next");
+        const hoursEl = document.getElementById("hours");
+        const hoursElCurr = hoursEl.getElementsByClassName("curr");
+        const hoursElNext = hoursEl.getElementsByClassName("next");
+        const minsEl = document.getElementById("mins");
+        const minsElCurr = minsEl.getElementsByClassName("curr");
+        const minsElNext = minsEl.getElementsByClassName("next");
+        const secondsEl = document.getElementById("seconds");
+        const secondsElCurr = secondsEl.getElementsByClassName("curr");
+        const secondsElNext = secondsEl.getElementsByClassName("next");
+
+        const newYear = new Date().getFullYear() + 1;
+        let newYearTime = new Date("2025-05-18");
+        newYearTime = new Date(
+            newYearTime.getTime() - new Date().getTimezoneOffset() * 60 * 1000
+        );
+
+        function updateAllCountdowns() {
+            const dates = {
+                current: {
+                    elements: [daysElCurr, hoursElCurr, minsElCurr, secondsElCurr],
+                    values: ["00", "00", "00", "00"]
+                },
+                next: {
+                    elements: [daysElNext, hoursElNext, minsElNext, secondsElNext],
+                    values: ["00", "00", "00", "00"]
+                },
+                general: {
+                    elements: [daysEl, hoursEl, minsEl, secondsEl]
+                }
+            };
+            const currentDate = new Date();
+            updateCountdown(dates.current, currentDate, true);
+            const nextDate = new Date(
+                currentDate.setSeconds(currentDate.getSeconds() + 1)
+            );
+            updateCountdown(dates.next, nextDate, false);
+            for (let i = 0; i < dates.current.values.length; i++) {
+                if (dates.current.values[i] - dates.next.values[i] !== 0) {
+                    dates.general.elements[i].classList.remove("flip");
+                }
+                setTimeout(function () {
+                    dates.general.elements[i].classList.add("flip");
+                }, 50);
+            }
+        }
+
+        function updateCountdown(dates, currentTime, isCurrent) {
+            const totalSeconds = (newYearTime - currentTime) / 1000;
+
+            const days = Math.floor(totalSeconds / 3600 / 24);
+            const hours = Math.floor(totalSeconds / 3600) % 24;
+            const mins = Math.floor(totalSeconds / 60) % 60;
+            const seconds = Math.floor(totalSeconds) % 60;
+
+            if (currentTime.getMonth() == 0 && currentTime.getDate() <= 2) {
+                dates.values = ["00", "00", "00", "00"];
+                for (let i = 0; i < dates.elements.length; i++) {
+                    for (let j = 0; j < daysElCurr.length; j++) {
+                        dates.elements[i][j].innerHTML = dates.values[i];
+                        if (isCurrent) {
+                            newYearEl.innerHTML = newYear - 1;
+                        }
+                    }
+                }
+
+                return;
+            }
+
+            dates.values = [
+                days,
+                formatTime(hours),
+                formatTime(mins),
+                formatTime(seconds)
+            ];
+
+            for (let i = 0; i < dates.elements.length; i++) {
+                for (let j = 0; j < daysElCurr.length; j++) {
+                    dates.elements[i][j].innerHTML = dates.values[i];
+                }
+            }
+        }
+
+        function formatTime(time) {
+            return time < 10 ? `0${time}` : time;
+        }
+
+        updateAllCountdowns();
+        setInterval(updateAllCountdowns, 1000);
+    </script>
+    <!-- mobile menu -->
+    <script>
+        document.querySelectorAll(".mobile-list li").forEach(item => {
+            item.addEventListener("click", (e) => {
+                document.getElementById("close-menu").click();
+            })
+        })
+    </script>
+    <!-- faq -->
+    <script>
+        document.querySelectorAll('.faq-question').forEach((item) => {
+            item.addEventListener('click', () => {
+                const faqItem = item.parentElement;
+                faqItem.classList.toggle('active');
+            });
+        });
+    </script>
+    <!-- form -->
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+        // Initialize EmailJS
+        emailjs.init("zoPmFG69SU9clzlvG");
+
+        document.getElementById('contact-form').addEventListener('submit', function (event) {
+            event.preventDefault();
+
+            emailjs.sendForm('service_wjus38s', 'template_omj21fa', this)
+                .then(function (response) {
+                    console.log('Sent successfully:', response);
+                    showSuccessModal();
+                }, function (error) {
+                    console.log('Failed to send:', error);
+                });
+        });
+
+        function showSuccessModal() {
+            document.getElementById('contact-form').reset();
+
+            var modal = document.getElementById('success-modal');
+            var span = document.getElementsByClassName('close-btn')[0];
+
+            modal.style.display = 'block';
+
+            span.onclick = function () {
+                modal.style.display = 'none';
+            }
+
+            window.onclick = function (event) {
+                if (event.target === modal) {
+                    modal.style.display = 'none';
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>

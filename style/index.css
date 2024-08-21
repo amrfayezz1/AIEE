@@ -1,0 +1,93 @@
+/* Define CSS Variables */
+:root {
+    --primary-color: #0f75b6;
+    --secondary-color: #FFC107;
+    --accent-color: #004D40;
+    --background-color: #F5F5F5;
+    --text-color: #212529;
+    --shadow-color: rgba(0, 0, 0, 0.25);
+    --font-family: "Roboto", sans-serif;
+    --transition-speed: 0.3s;
+}
+
+/* Base Styles */
+body {
+    font-family: var(--font-family);
+    margin: 0;
+    padding: 0;
+    min-height: 150vh;
+    scroll-behavior: smooth;
+    background-color: var(--primary-color);
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* Button Styles */
+.btn-primary {
+    background-color: var(--primary-color);
+    box-shadow: 0 4px 30px 0 var(--shadow-color), inset 0 0 0 0 var(--accent-color);
+    color: var(--text-color);
+    border: none;
+    width: fit-content;
+    padding: 10px 30px;
+    min-width: fit-content !important;
+    flex: unset !important;
+}
+
+.btn-secondary {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    padding: 15px 60px;
+    box-shadow: 0 4px 30px 0 var(--shadow-color), inset 0 0 0 0 var(--accent-color);
+    transition: ease-out var(--transition-speed) all;
+    font-size: 18px;
+    border: none;
+}
+
+.btn:hover {
+    box-shadow: 0 4px 30px 0 var(--shadow-color), inset 450px 0 0 0 var(--accent-color);
+}
+
+/* Divider Styles */
+.divider {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    padding: 30px;
+}
+
+.divider h3 {
+    margin: 0;
+}
+
+.divider > div {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.divider div.countries {
+    flex: 9;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    gap: 15px;
+    flex-wrap: wrap;
+    align-items: center;
+    /* margin-left: 20px; */
+}
+
+.divider .greyed {
+    color: #989898;
+    font-size: medium;
+    min-width: 170px;
+}
+
+.divider p {
+    font-size: large;
+    color: var(--text-color);
+    font-weight: 600;
+}
